@@ -8,9 +8,15 @@
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
+    <link rel="stylesheet" href="../../assets/stylesheets/application.css">
   </head>
 
   <body>
+    <nav class="container">
+      <p> <%= link_to "Wikinimous", articles_path %> </p>
+      <p> <%= link_to "New Article", new_article_path %> </p>
+    </nav>
+
     <%= yield %>
   </body>
 </html>

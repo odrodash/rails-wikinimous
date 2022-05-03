@@ -1,0 +1,8 @@
+<div class="index">
+  <h2> <%= @article.title %> </h2>
+  <p> <%= @article.content %> </p>
+  <br>
+  <%= link_to "Edit article",  edit_article_path %>
+  <br>
+  <%= link_to "Delete article",  article_path(@article), data: { turbo_method: :delete, turbo_confirm: "esta seguro?"} %>
+</div>
